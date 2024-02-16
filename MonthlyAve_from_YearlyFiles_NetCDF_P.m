@@ -27,7 +27,6 @@ for month=1:12
     G=zeros(NCOL,NROW);    
 for yr=1:1:NumberofYears
     E=zeros(NCOL,NROW);
-    EE=zeros(NCOL,NROW);
     swh=ncread([directory, 'Wave_',num2str(yr+StartYear-1),'.nc'],'swh');
     mwp=ncread([directory, 'Wave_',num2str(yr+StartYear-1),'.nc'],'mwp');
     [longitude,latitude, time] = size(swh);
